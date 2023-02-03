@@ -60,25 +60,16 @@ const Layout = () => {
             <Route element={<Categoria />} path="/categoryList" />
             <Route element={<NewCategory />} path="/createCategory" />
             <Route element={<EditCategory />} path="/edit-categoria/:id" />
-<<<<<<< HEAD
-  {/* <Route element={<Pay_success />} path="/pay_success" />
-            <Route element={<Pay_failure />} path="/pay_failure" />
-=======
-           <Route element={<Pay_success />} path="/pay_success" />
-           {/* <Route element={<Pay_failure />} path="/pay_failure" />
->>>>>>> 471fafa46b761405d7c73e4334bb7e8adec1eca7
-            <Route element={<Pay_pending />} path="/pay_pending" />
-  */}
-  <Route
-    path="*"
-    element={
-      <h1 className="text-center alert alert-info my-5 p-5">
-        Oops! El recurso solicitado no está disponible
-      </h1>
-    }
-  />
+            <Route
+              path="*"
+              element={
+                <h1 className="text-center alert alert-info my-5 p-5">
+                  Oops! El recurso solicitado no está disponible
+                </h1>
+              }
+            />
           </Routes >
-  <Footer />
+          <Footer />
         </ScrollToTop >
       </BrowserRouter >
     </div >
